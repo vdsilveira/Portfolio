@@ -19,10 +19,8 @@ export default function Home() {
         </nav>
       </header>
 
-      <div
-        className="flex items-center w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${require("/public/main-bg.webp")})` }}
-      >
+      <div className="flex items-center w-full h-full">
+        <Image src={require("/public/main-bg.webp")} alt="Main Background" layout="fill" objectFit="cover" quality={100} priority={true} />
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
             Hello! I&apos;m Vinicius,
