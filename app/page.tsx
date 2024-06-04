@@ -30,7 +30,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-gray-200 hidden md:block">
-            Welcome to my GitHub, where I share my projects and experiences in developing innovative solutions in web3.
+            Welcome to my Portfolio, where I share my projects and experiences in developing innovative solutions in web3.
           </p>
 
           <Link
