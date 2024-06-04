@@ -9,7 +9,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full p-4 bg-black bg-opacity-50 z-[20]">
         <nav className="max-w-[1200px] mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/githubIcon.png" alt="GitHub Icon" width={32} height={32} className="w-8 h-8 mr-2" />
+            <Image src={require("/public/githubIcon.png")} alt="GitHub Icon" width={32} height={32} className="w-8 h-8 mr-2" />
             <h1 className="text-white text-2xl font-bold">vdsilveira</h1>
           </div>
           <div>
@@ -47,19 +47,20 @@ export default function Home() {
 
       <div className="absolute bottom-0 right-0 z-[10]">
         <Image
-          src="/horse.png"
+          src={require("/public/horse.png")}
           alt="Image of a horse"
           height={300}
           width={300}
           className="absolute right-55 top-40"
         />
 
-        <Image src="/cliff.webp" alt="Image of a cliff" width={480} height={480} />
+        <Image src={require("/public/cliff.webp")} alt="Image of a cliff" width={480} height={480} />
+
       </div>
 
       <div className="absolute bottom-0 z-[5] w-full h-auto">
         <Image
-          src="/trees.webp"
+          src={require("/public/trees.webp")}
           alt="Image of trees"
           width={2000}
           height={2000}
@@ -68,7 +69,7 @@ export default function Home() {
       </div>
 
       <Image
-        src="/stars.png"
+        src={require("/public/stars.png")}
         alt="Image of stars"
         height={300}
         width={300}
