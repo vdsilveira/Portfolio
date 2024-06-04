@@ -9,12 +9,12 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full p-4 bg-black bg-opacity-50 z-[20]">
         <nav className="max-w-[1200px] mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/githubIcon.png" alt="GitHub Icon" className="w-8 h-8 mr-2" />
+            <Image src="/githubIcon.png" alt="GitHub Icon" width={32} height={32} className="w-8 h-8 mr-2" />
             <h1 className="text-white text-2xl font-bold">vdsilveira</h1>
           </div>
           <div>
-            <Link href="https://github.com/vdsilveira?tab=repositories" className="text-white mr-4">Projects</Link>
-            <Link href="https://www.linkedin.com/in/vdsilveira/" className="text-white">Contact</Link>
+            <Link href="https://github.com/vdsilveira?tab=repositories" className="text-white mr-10 font-semibold">Repositories</Link>
+            <Link href="https://www.linkedin.com/in/vdsilveira/" className="text-white font-semibold">LinkedIn</Link>
           </div>
         </nav>
       </header>
@@ -25,7 +25,7 @@ export default function Home() {
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
-            Hello! I'm Vinicius,
+            Hello! I&apos;m Vinicius,
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
               Blockchain Developer
@@ -34,14 +34,17 @@ export default function Home() {
           <p className="text-gray-200 hidden md:block">
             Welcome to my GitHub, where I share my projects and experiences in developing innovative solutions in web3.
           </p>
-          <Link href="https://github.com/vdsilveira?tab=repositories">
-            <div className="mt-4 px-5 py-3 bg-blue-500 hover:bg-blue-400 text-white text-lg font-semibold rounded-[20px] transition max-w-[200px]">
+
+          <Link
+              href="https://github.com/vdsilveira?tab=repositories"
+              className="rounded-[20px] group relative bg-transparent  hover:bg-blue-500 px-5 border border-white py-3 text-lg font-semibold text-white max-w-[250px]"
+            >
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Explore My Projects
-            </div>
-          </Link>
+            </Link>
         </div>
       </div>
-      
+
       <div className="absolute bottom-0 right-0 z-[10]">
         <Image
           src="/horse.png"
