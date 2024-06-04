@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen relative">
+    <main className="w-screen h-screen relative bg-white">
       <header className="fixed top-0 left-0 w-full p-4 bg-black bg-opacity-50 z-[20]">
         <nav className="max-w-[1200px] mx-auto flex justify-between items-center">
           <div className="flex items-center">
@@ -21,7 +21,7 @@ export default function Home() {
 
       <div
         className="flex items-center w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: "url(/main-bg.webp)" }}
+        style={{ backgroundImage: "url('/main-bg.webp')" }}
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
@@ -36,12 +36,12 @@ export default function Home() {
           </p>
 
           <Link
-              href="https://github.com/vdsilveira?tab=repositories"
-              className="rounded-[20px] group relative bg-transparent  hover:bg-blue-500 px-5 border border-white py-3 text-lg font-semibold text-white max-w-[250px]"
-            >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-              Explore My Projects
-            </Link>
+            href="https://github.com/vdsilveira?tab=repositories"
+            className="rounded-[20px] group relative bg-transparent  hover:bg-blue-500 px-5 border border-white py-3 text-lg font-semibold text-white max-w-[250px]"
+          >
+            <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
+            Explore My Projects
+          </Link>
         </div>
       </div>
 
