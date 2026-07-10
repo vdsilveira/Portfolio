@@ -3,18 +3,20 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
-
-const links = [
-  { label: "Sobre", href: "#sobre" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Experiência", href: "#experiencia" },
-  { label: "Contato", href: "#contato" },
-];
+import { useLanguage } from "@/lib/i18n";
 
 export default function Navbar() {
+  const { t, lang, toggle } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const links = [
+    { label: t.nav.about, href: "#sobre" },
+    { label: t.nav.skills, href: "#skills" },
+    { label: t.nav.projects, href: "#projetos" },
+    { label: t.nav.experience, href: "#experiencia" },
+    { label: t.nav.contact, href: "#contato" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -54,6 +56,13 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
+          <button
+            onClick={toggle}
+            aria-label={lang === "pt" ? "Switch to English" : "Mudar para Português"}
+            className="rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+          >
+            {lang === "pt" ? "EN" : "PT"}
+          </button>
           <Link
             href="https://github.com/vdsilveira"
             target="_blank"
@@ -72,13 +81,22 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Menu"
-          className="rounded-md border border-border p-2 text-foreground md:hidden"
-        >
-          {open ? <FiX className="h-5 w-5" /> : <FiMenu className="h-5 w-5" />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <button
+            onClick={toggle}
+            aria-label={lang === "pt" ? "Switch to English" : "Mudar para Português"}
+            className="rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+          >
+            {lang === "pt" ? "EN" : "PT"}
+          </button>
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Menu"
+            className="rounded-md border border-border p-2 text-foreground"
+          >
+            {open ? <FiX className="h-5 w-5" /> : <FiMenu className="h-5 w-5" />}
+          </button>
+        </div>
       </nav>
 
       {open && (
