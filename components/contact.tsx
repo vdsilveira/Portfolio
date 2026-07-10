@@ -29,7 +29,7 @@ export default function Contact() {
           </p>
 
           <Link
-            href="mailto:contato@vdsilveira.dev"
+            href="mailto:vdsilveira@hotmail.com"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 glow"
           >
             <FiMail className="h-4 w-4" />
