@@ -1,12 +1,29 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Portfolio Dev ",
-  description: "This is my Portfolio",
+  title: "Vinicius Silveira — Blockchain Developer",
+  description:
+    "Portfólio de Vinicius Silveira, desenvolvedor Blockchain e Web3. Smart contracts, DeFi e dApps.",
+  openGraph: {
+    title: "Vinicius Silveira — Blockchain Developer",
+    description:
+      "Portfólio de Vinicius Silveira, desenvolvedor Blockchain e Web3.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -15,8 +32,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="pt-BR"
+      className={`${inter.variable} ${spaceGrotesk.variable} bg-background`}
+    >
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
