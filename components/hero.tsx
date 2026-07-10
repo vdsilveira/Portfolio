@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight, FiDownload } from "react-icons/fi";
@@ -20,12 +21,11 @@ export default function Hero() {
       <div className="pointer-events-none absolute -top-32 right-0 h-96 w-96 rounded-full bg-primary/20 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-0 left-1/4 h-72 w-72 rounded-full bg-accent/10 blur-[120px]" />
 
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-28">
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pt-28 lg:grid-cols-[1.2fr_1fr] lg:gap-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl"
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium text-muted-foreground">
             <span className="h-2 w-2 rounded-full bg-primary" />
@@ -71,6 +71,26 @@ export default function Hero() {
                 </div>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="relative mx-auto max-w-sm lg:mx-0 lg:justify-self-end"
+        >
+          <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-primary/20 blur-2xl" />
+          <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-card">
+            <Image
+              src="/perfil.png"
+              alt="Ilustração de Vinicius, desenvolvedor Blockchain, com grafismos de rede on-chain"
+              width={640}
+              height={640}
+              priority
+              className="h-full w-full object-cover"
+            />
+            <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-primary/20" />
           </div>
         </motion.div>
       </div>
