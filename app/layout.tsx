@@ -15,13 +15,13 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Vinicius Silveira — Blockchain Developer",
+  title: "V.D. Silveira — Blockchain Developer",
   description:
-    "Portfólio de Vinicius Silveira, desenvolvedor Blockchain e Web3. Smart contracts, DeFi e dApps.",
+    "Portfólio de V.D. Silveira, desenvolvedor Blockchain e Web3. Smart contracts, DeFi e dApps.",
   openGraph: {
-    title: "Vinicius Silveira — Blockchain Developer",
+    title: "V.D. Silveira — Blockchain Developer",
     description:
-      "Portfólio de Vinicius Silveira, desenvolvedor Blockchain e Web3.",
+      "Portfólio de V.D. Silveira, desenvolvedor Blockchain e Web3.",
     type: "website",
   },
 };

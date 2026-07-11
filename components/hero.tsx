@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-card">
             <Image
               src="/perfil.png"
-              alt="Ilustração de Vinicius, desenvolvedor Blockchain, com grafismos de rede on-chain"
+              alt="Ilustração de V.D. Silveira, desenvolvedor Blockchain, com grafismos de rede on-chain"
               width={640}
               height={640}
               priority

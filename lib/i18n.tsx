@@ -23,7 +23,7 @@ export const dictionaries = {
     },
     hero: {
       badge: "Disponível para novos projetos",
-      titleStart: "Olá, eu sou Vinicius,",
+      titleStart: "Olá, eu sou V.D. Silveira,",
       titleHighlight: "Blockchain Developer",
       description:
         "Construo soluções descentralizadas em Web3 — de smart contracts seguros a dApps completos. Bem-vindo ao meu portfólio, onde compartilho projetos e experiências.",
@@ -35,7 +35,7 @@ export const dictionaries = {
         { value: "10+", label: "dApps entregues" },
       ],
       imageAlt:
-        "Ilustração de Vinicius, desenvolvedor Blockchain, com grafismos de rede on-chain",
+        "Ilustração de V.D. Silveira, desenvolvedor Blockchain, com grafismos de rede on-chain",
     },
     about: {
       eyebrow: "// sobre mim",
@@ -154,7 +154,7 @@ export const dictionaries = {
     },
     hero: {
       badge: "Available for new projects",
-      titleStart: "Hi, I'm Vinicius,",
+      titleStart: "Hi, I'm V.D. Silveira,",
       titleHighlight: "Blockchain Developer",
       description:
         "I build decentralized Web3 solutions — from secure smart contracts to full dApps. Welcome to my portfolio, where I share my projects and experience.",
@@ -166,7 +166,7 @@ export const dictionaries = {
         { value: "10+", label: "dApps shipped" },
       ],
       imageAlt:
-        "Illustration of Vinicius, Blockchain developer, with on-chain network graphics",
+        "Illustration of V.D. Silveira, Blockchain developer, with on-chain network graphics",
     },
     about: {
       eyebrow: "// about me",

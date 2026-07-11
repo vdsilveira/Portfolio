@@ -57,7 +57,7 @@ export default function Contact() {
         </motion.div>
 
         <footer className="mt-12 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Vinicius Silveira. Construído com Next.js
+          © {new Date().getFullYear()} V.D. Silveira. Construído com Next.js
           &amp; Tailwind CSS.
         </footer>
       </div>
