@@ -275,7 +275,7 @@ export const dictionaries = {
       footer: "Built with Next.js & Tailwind CSS.",
     },
   },
-} as const;
+};
 
 type LanguageContextValue = {
   lang: Lang;
