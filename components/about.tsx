@@ -33,7 +33,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
           >
             <span className="font-mono text-sm font-medium text-primary">
-              // sobre mim
+              {"// sobre mim"}
             </span>
             <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight sm:text-4xl">
               Transformando ideias em protocolos descentralizados

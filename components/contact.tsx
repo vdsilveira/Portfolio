@@ -18,7 +18,7 @@ export default function Contact() {
           <div className="pointer-events-none absolute -top-24 left-1/2 h-56 w-56 -translate-x-1/2 rounded-full bg-primary/20 blur-[100px]" />
 
           <span className="font-mono text-sm font-medium text-primary">
-            // contato
+            {"// contato"}
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight sm:text-4xl">
             Vamos construir algo juntos
